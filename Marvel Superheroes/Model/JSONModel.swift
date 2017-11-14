@@ -9,10 +9,10 @@
 import Foundation
 
 struct Marvel: Codable {
-    let results: [Characters]
+    let results: [MarvelCharacters]
 }
 
-struct Characters: Codable {
+struct MarvelCharacters: Codable {
     let name: String?
     let description: String?
     let thumbnail: String?

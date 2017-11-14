@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  MarvelCharacter.swift
 //  Marvel Superheroes
 //
 //  Created by Rafa Marques on 14.11.17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Character {
+struct MarvelCharacter {
     let name: String
     let description: String
     let thumbnail: String
@@ -20,9 +20,9 @@ struct Character {
         self.thumbnail = thumbnail
     }
     
-    static func loadCharacters() -> [Character] {
+    static func loadCharacters() -> [MarvelCharacter] {
         // Array für die Charaktere
-        var characters = [Character]()
+        var characters = [MarvelCharacter]()
         // Marvel API Adresse + Key
         let marvelApiURL = "https://gateway.marvel.com:443/v1/public/characters?apikey=53d0e42246c3a2e647c81c018f307e2d"
         // JSON Decoder
@@ -35,7 +35,7 @@ struct Character {
                 for result in marvel.results {
                     // Wenn diese 3 Daten vorhanden sind werden die in das Array gespeichert
                     if let name = result.name, let description = result.description, let thumbnail = result.thumbnail {
-                        characters.append(Character(name: name, description: description, thumbnail: thumbnail))
+                        characters.append(MarvelCharacter(name: name, description: description, thumbnail: thumbnail))
                     }
                 }
             } catch {
