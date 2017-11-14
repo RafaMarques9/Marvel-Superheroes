@@ -1,5 +1,5 @@
 //
-//  Characters.swift
+//  Character.swift
 //  Marvel Superheroes
 //
 //  Created by Rafa Marques on 14.11.17.
@@ -33,6 +33,7 @@ struct Character {
                 let marvel = try jsonDecoder.decode(Marvel.self, from: jsonData)
                 // Schleife über Ergebnisse
                 for result in marvel.results {
+                    // Wenn diese 3 Daten vorhanden sind werden die in das Array gespeichert
                     if let name = result.name, let description = result.description, let thumbnail = result.thumbnail {
                         characters.append(Character(name: name, description: description, thumbnail: thumbnail))
                     }
