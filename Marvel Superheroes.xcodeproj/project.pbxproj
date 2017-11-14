@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDA9DE401FBB07820013A14E /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9DE3F1FBB07820013A14E /* JSONModel.swift */; };
+		DDA9DE421FBB081C0013A14E /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9DE411FBB081C0013A14E /* Characters.swift */; };
 		DDF5BDD71FB9D9CB00E4317E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5BDD61FB9D9CB00E4317E /* AppDelegate.swift */; };
 		DDF5BDDC1FB9D9CB00E4317E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF5BDDA1FB9D9CB00E4317E /* Main.storyboard */; };
 		DDF5BDDE1FB9D9CB00E4317E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF5BDDD1FB9D9CB00E4317E /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDA9DE3F1FBB07820013A14E /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		DDA9DE411FBB081C0013A14E /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		DDF5BDD31FB9D9CB00E4317E /* Marvel Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Superheroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF5BDD61FB9D9CB00E4317E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF5BDDB1FB9D9CB00E4317E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		DDF5BDE91FB9D9F300E4317E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DDA9DE3F1FBB07820013A14E /* JSONModel.swift */,
+				DDA9DE411FBB081C0013A14E /* Characters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			files = (
 				DDF5BDD71FB9D9CB00E4317E /* AppDelegate.swift in Sources */,
 				DDF5BDED1FB9DB9D00E4317E /* SuperheroTableViewController.swift in Sources */,
+				DDA9DE401FBB07820013A14E /* JSONModel.swift in Sources */,
+				DDA9DE421FBB081C0013A14E /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
