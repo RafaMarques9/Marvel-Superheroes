@@ -12,7 +12,6 @@
 		DDF5BDDE1FB9D9CB00E4317E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF5BDDD1FB9D9CB00E4317E /* Assets.xcassets */; };
 		DDF5BDE11FB9D9CB00E4317E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF5BDDF1FB9D9CB00E4317E /* LaunchScreen.storyboard */; };
 		DDF5BDED1FB9DB9D00E4317E /* SuperheroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5BDEC1FB9DB9D00E4317E /* SuperheroTableViewController.swift */; };
-		DDF5BDEF1FB9DC9600E4317E /* SuperheroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5BDEE1FB9DC9600E4317E /* SuperheroModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		DDF5BDE01FB9D9CB00E4317E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF5BDE21FB9D9CB00E4317E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDF5BDEC1FB9DB9D00E4317E /* SuperheroTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroTableViewController.swift; sourceTree = "<group>"; };
-		DDF5BDEE1FB9DC9600E4317E /* SuperheroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 		DDF5BDE91FB9D9F300E4317E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DDF5BDEE1FB9DC9600E4317E /* SuperheroModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,7 +168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF5BDEF1FB9DC9600E4317E /* SuperheroModel.swift in Sources */,
 				DDF5BDD71FB9D9CB00E4317E /* AppDelegate.swift in Sources */,
 				DDF5BDED1FB9DB9D00E4317E /* SuperheroTableViewController.swift in Sources */,
 			);
