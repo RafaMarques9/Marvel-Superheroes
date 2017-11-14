@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DDA9DE401FBB07820013A14E /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9DE3F1FBB07820013A14E /* JSONModel.swift */; };
-		DDA9DE421FBB081C0013A14E /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9DE411FBB081C0013A14E /* Characters.swift */; };
+		DDA9DE421FBB081C0013A14E /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9DE411FBB081C0013A14E /* MarvelCharacter.swift */; };
 		DDF5BDD71FB9D9CB00E4317E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5BDD61FB9D9CB00E4317E /* AppDelegate.swift */; };
 		DDF5BDDC1FB9D9CB00E4317E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF5BDDA1FB9D9CB00E4317E /* Main.storyboard */; };
 		DDF5BDDE1FB9D9CB00E4317E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF5BDDD1FB9D9CB00E4317E /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		DDA9DE3F1FBB07820013A14E /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
-		DDA9DE411FBB081C0013A14E /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		DDA9DE411FBB081C0013A14E /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
 		DDF5BDD31FB9D9CB00E4317E /* Marvel Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Superheroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF5BDD61FB9D9CB00E4317E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF5BDDB1FB9D9CB00E4317E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DDA9DE3F1FBB07820013A14E /* JSONModel.swift */,
-				DDA9DE411FBB081C0013A14E /* Characters.swift */,
+				DDA9DE411FBB081C0013A14E /* MarvelCharacter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 				DDF5BDD71FB9D9CB00E4317E /* AppDelegate.swift in Sources */,
 				DDF5BDED1FB9DB9D00E4317E /* SuperheroTableViewController.swift in Sources */,
 				DDA9DE401FBB07820013A14E /* JSONModel.swift in Sources */,
-				DDA9DE421FBB081C0013A14E /* Characters.swift in Sources */,
+				DDA9DE421FBB081C0013A14E /* MarvelCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJ3WS3Z87K;
-				INFOPLIST_FILE = "Marvel Superheroes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Marvel Superheroes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rafamarques.Marvel-Superheroes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJ3WS3Z87K;
-				INFOPLIST_FILE = "Marvel Superheroes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Marvel Superheroes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rafamarques.Marvel-Superheroes";
 				PRODUCT_NAME = "$(TARGET_NAME)";

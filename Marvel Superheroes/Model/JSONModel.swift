@@ -9,12 +9,21 @@
 import Foundation
 
 struct Marvel: Codable {
+    let data: Results
+}
+
+struct Results: Codable {
     let results: [MarvelCharacters]
 }
 
 struct MarvelCharacters: Codable {
     let name: String?
     let description: String?
-    let thumbnail: String?
+    let thumbnail: CharacterThumbnail
     //let comicList: [String, String] ???
+}
+
+struct CharacterThumbnail: Codable {
+    let path: String?
+    let `extension`: String?
 }

@@ -9,10 +9,14 @@
 import UIKit
 
 class SuperheroTableViewController: UITableViewController {
-
+    var characters = [MarvelCharacter]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        characters = MarvelCharacter.loadCharacters()
+        print("Marvel Character: \(characters)")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +33,22 @@ class SuperheroTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return characters.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "superheroCell", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = characters[indexPath.row].name
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
