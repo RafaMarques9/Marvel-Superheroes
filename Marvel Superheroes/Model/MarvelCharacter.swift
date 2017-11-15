@@ -36,12 +36,6 @@ struct MarvelCharacter {
                 let marvel = try jsonDecoder.decode(Marvel.self, from: jsonData)
                 // Schleife über Ergebnisse
                 for results in marvel.data.results {
-                    // Wenn diese 3 Daten vorhanden sind werden die in das Array gespeichert
-                    /*
-                    if let name = data.results, let description = result.description, let thumbnail = result.thumbnail {
-                        characters.append(MarvelCharacter(name: name, description: description, thumbnail: thumbnail))
-                    }
-                    */
                     if let name = results.name, let description = results.description, let thumbnailPath = results.thumbnail.path, let thumbnailExtension = results.thumbnail.extension {
                         characters.append(MarvelCharacter(name: name, description: description, thumbnailPath: thumbnailPath, thumbnailExtension: thumbnailExtension))
                     }
