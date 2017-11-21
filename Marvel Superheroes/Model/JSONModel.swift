@@ -20,10 +20,20 @@ struct MarvelCharacters: Codable {
     let name: String?
     let description: String?
     let thumbnail: CharacterThumbnail
-    //let comicList: [String, String] ???
+    let comics: Comics
 }
 
 struct CharacterThumbnail: Codable {
     let path: String?
     let `extension`: String?
+}
+
+struct Comics: Codable {
+    let available: Int?
+    let items: [ComicList]?
+}
+
+struct ComicList: Codable {
+    let resourceURI: String?
+    let name: String?
 }

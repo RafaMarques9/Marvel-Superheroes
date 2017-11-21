@@ -14,6 +14,8 @@ class SuperheroTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Marvel Characters List"
+        
         characters = MarvelCharacter.loadCharacters()
         print("Marvel Character: \(characters)")
         
@@ -44,10 +46,18 @@ class SuperheroTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "superheroCell", for: indexPath)
 
-        // Configure the cell...
+        // Configure the cell
         cell.textLabel?.text = characters[indexPath.row].name
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let destinationViewController = storyboard!.instantiateViewController(withIdentifier: "SuperheroDetailViewController") as? SuperheroDetailViewController {
+            destinationViewController.superheroData = characters[indexPath.row]
+            
+            show(destinationViewController, sender: nil)
+        }
     }
 
     /*
@@ -84,7 +94,7 @@ class SuperheroTableViewController: UITableViewController {
         return true
     }
     */
-
+    
     /*
     // MARK: - Navigation
 
